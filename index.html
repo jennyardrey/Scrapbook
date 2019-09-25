@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    
+    <body>
+        <header>
+            <h1>My HTML Scrapbook</h1>
+            <img src="scrapbook-logo.png" alt="scrapbook logo">
+            <p>The purpose of this page is to practice and showcase various html markup, and further understand semantics and the role they play in creating an html document</p>
+        </header>
+
+        <main>
+            <nav>
+                <h2>Contents</h2>
+                <ol>
+                    <li><a href="#">Whats the point?</li></a>
+                    <li><a href="#">A nice table</li></a>
+                    <li><a href="#">Leave a message</li></a>
+                </ol>
+            </nav>
+
+           <section>
+               <h2>What's the point?</h2>
+               <p>I've created this scrapbook to practice a bit of html. I've included the following elements:</p>
+               <ul>
+                    <li>Heading elements (<code>h1, h2, h3</code>... etc)</li>
+                    <li>Paragraph elements(<code>p</code>)</li>
+                    <li>Images(<code>img</code>)</li>
+                    <li>A quote(<code>quote</code>)</li>
+                    <li>Some example code(<code>code</code>)</li>
+                    <li>A form!(<code>form</code>)</li>
+                    <li>A button. Because i'm spoiling you.(<code>button</code>)</li>
+                </ul>
+                <quote>"Wow thats just so amazing. Really." - Basically everyone who has seen this page</quote>
+           </section>
+
+           <section>
+               <h2>A Nice Table</h2>
+                <table style="border: 1px solid black;">
+                        <caption>Example Study Schedule</caption>
+                        <thead>
+                            <tr style="border: 1px solid black;">
+                                 <th style="border: 1px solid black;" colspan="8">Week 1</th>
+                            </tr>
+                            <tr>
+                                <td style="border: 1px solid black;" colspan="1"><b>Day<br>/Time</b></td>
+                                <td style="border: 1px solid black;" colspan="1"><b>Monday</b></td>
+                                <td style="border: 1px solid black;" colspan="1"><b>Tuesday</b></td>
+                                <td style="border: 1px solid black;" colspan="1"><b>Wedneday</b></td>
+                                <td style="border: 1px solid black;" colspan="1"><b>Thursday</b></td>
+                                <td style="border: 1px solid black;" colspan="1"><b>Friday</b></td>
+                                <td style="border: 1px solid black;" colspan="1"><b>Saturday</b></td>
+                                <td style="border: 1px solid black;" colspan="1"><b>Sunday</b></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="border: 1px solid black;" colspan="1"><b>Morning</b></td>
+                                <td style="border: 1px solid black;" colspan="1">Work</td>
+                                <td style="border: 1px solid black;" colspan="1">Work</td>
+                                <td style="border: 1px solid black;" colspan="1">Work</td>
+                                <td style="border: 1px solid black;" colspan="1">Work</td>
+                                <td style="border: 1px solid black;" colspan="1">Work</td>
+                                <td style="border: 1px solid black;" colspan="1">Rest</td>
+                                <td style="border: 1px solid black;" colspan="1">Rest</td>
+                            </tr>
+                            <tr>
+                                    <td style="border: 1px solid black;" colspan="1"><b>Afternoon</b></td>
+                                    <td style="border: 1px solid black;" colspan="1">Work</td>
+                                    <td style="border: 1px solid black;" colspan="1">Work</td>
+                                    <td style="border: 1px solid black;" colspan="1">Work</td>
+                                    <td style="border: 1px solid black;" colspan="1">Work</td>
+                                    <td style="border: 1px solid black;" colspan="1">Work</td>
+                                    <td style="border: 1px solid black;" colspan="1">Rest</td>
+                                    <td style="border: 1px solid black;" colspan="1">Rest</td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid black;" colspan="1"><b>Evening</b></td>
+                                    <td style="border: 1px solid black;" colspan="1">Study</td>
+                                    <td style="border: 1px solid black;" colspan="1">Study</td>
+                                    <td style="border: 1px solid black;" colspan="1">Study</td>
+                                    <td style="border: 1px solid black;" colspan="1">Study</td>
+                                    <td style="border: 1px solid black;" colspan="1">Study</td>
+                                    <td style="border: 1px solid black;" colspan="1">Rest</td>
+                                    <td style="border: 1px solid black;" colspan="1">Rest</td>
+                                </tr>
+                        </tbody>
+                    </table>
+
+           </section>
+           <section>
+               <h2>Leave a Message!</h2>
+                <form action='/place-where-form-go' method="POST">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name">
+                    </div>
+                    <div>
+                        <label for="mail">Email::</label>
+                        <input type="email" id="mail" name="user_mail">
+                    </div>
+                    <div>
+                        <label for="msg">Message:</label>
+                        <textarea id="name" name="user_message"></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Submit!</button>
+                    </div>
+                </form>
+           </section>
+<button class="like" type="button">Like!</button>
+
+</main>
+    </body>
+
+</html>
